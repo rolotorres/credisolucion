@@ -1,0 +1,571 @@
+<!-- Main Navigation Bar -->
+<nav class="navbar navbar-default navbar-static-top transparent navbar-welcome" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-menu">
+                  <span class="sr-only">Toggle navigation</span>
+                  <i class="fa fa-bars"></i>
+              </button>
+            <a class="navbar-brand" href="/"><span class="font-bold">Admin</span>LTE</a>
+        </div>
+        <!-- /.navbar-header -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="collapse-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="/">Home</a></li>
+                <li>
+                    <a href="/docs">Docs</a>
+                </li>
+                <li>
+                    <a href="/premium">Premium Templates</a>
+                </li>
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/#subscribe">Subscribe</a>
+                </li>
+            </ul>
+            <!-- /.navbar-nav -->
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!--/.navbar-->
+
+
+<div id="main-content">
+
+    <div class="home h20">
+        <div class="home-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 class="text-center">
+                            Admin<span class="font-light">LTE</span> Bootstrap Admin Dashboard Template
+                        </h1>
+
+                        <p class="lead text-center padding-top">
+                            Best open source admin dashboard &amp; control panel theme. Built on top of Bootstrap, AdminLTE provides a range of responsive, reusable, and commonly used components.
+                        </p>
+                    </div>
+                    <!-- /.col -->
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-xs-10 col-xs-offset-1 relative">
+                        <div class="text-center" style="margin-bottom: 20px;">
+                            <a href="/download/AdminLTE-master" class="btn is-outline mr-1">DOWNLOAD</a>
+                            <a href="/preview" class="btn is-outline no-border mr-1">LIVE PREVIEW</a>
+                            <a href="https://github.com/ColorlibHQ/AdminLTE" class="btn is-outline no-border btn-black">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </div>
+
+                        <img class="img-responsive img-rounded-top" src="img/AdminLTE2.1.png" alt="AdminLTE Presentation">
+
+                        <div class="dl-count">
+                            <b>
+                              <i class="fa fa-cloud-download"></i> 2,694,919
+                          </b>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- /.home-inner -->
+    </div>
+    <!-- /.home -->
+
+
+    <div class="more bg-gray">
+        <div class="container">
+            <h2 class="text-center">Simulador de Crédito</h2>
+
+            <div class="col-md-3">
+                <br>
+
+                <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+
+                    <form action="simulador-resultado" method="post" class="form-theme" target="popCalc" onsubmit="PopupCenter('about:blank','popCalc','620','650');">
+                        <label>Tipo de Préstamo</label>
+                        <div class="selector">
+                            <select name="tipo" id="tipo" size="1" class="guests-input">
+                        <option value="Prestamo Personal BNF">Prestamo Personal - Tarjeta Débito BNF</option>
+                        <option value="Compra de Deuda para la Gente">Compra de Deuda para la Gente</option>
+                       
+                        <option value="Vehiculo Cero Kilometro para la Gente">Vehículo Cero Kilometro para la Gente</option>
+                        <option value="Prestamo para Microempresarios">Prestamo para Microempresarios (Pago Mensual)</option>
+                        <option value="Prestamo para Vivienda Fondos Propios">Prestamo para Vivienda - Fondos Propios</option>
+                        <option value="Prestamo MI CASA AFD">Prestamo MI CASA AFD</option>
+                        <option value="Prestamo PRIMERA VIVIENDA AFD (Hasta 4 salarios minimos de ingreso)">Prestamo PRIMERA VIVIENDA AFD (Hasta 4 salarios minimos de ingreso)</option>
+                        <option value="Prestamo PRIMERA VIVIENDA AFD (Hasta 7 salarios minimos de ingreso)">Prestamo PRIMERA VIVIENDA AFD (Hasta 7 salarios minimos de ingreso)</option>
+                        <option value="Nande Roga Apartado 1">Crédito Ñande Roga Pyahurá Apartado 1 y 3</option>
+                        <option value="Nande Roga Apartado 2">Crédito Ñande Roga Pyahurá Apartado 2</option>
+                        <option value="Estudios Extranjero">Crédito para Estudios Superiores en el Extranjero</option>
+                      </select>
+                            <span class="custom-select">Elija</span>
+                        </div>
+
+                        <label>Monto en Gs.</label>
+                        <input type="text" name="monto" class="input" onkeyup="return separadorMilesOnKey(event,this)" autocomplete="off">
+
+                        <label>Plazo</label>
+                        <div class="selector">
+                            <select name="plazo" id="plazo" size="1" onchange="" class="guests-input"> 
+                        <option value="12">12 meses</option>
+                        <option value="18">18 meses</option>
+                        <option value="24">24 meses</option>
+                        <option value="30">30 meses</option>
+                        <option value="36">36 meses</option>
+                        <option value="42">42 meses</option>
+                        <option value="48">48 meses</option>
+                        <option value="54">54 meses</option>
+                        <option value="60">60 meses</option>
+                        <option value="120">120 meses</option>
+                        <option value="180">180 meses</option>
+                        <option value="240">240 meses</option>
+                       </select>
+                            <span class="custom-select">Elija</span>
+                        </div>
+                        <input type="submit" class="btn" value="Calcular">
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.more -->
+
+
+    <div class="features-menu" style="display: block;">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 40px"><b>Admin</b>LTE Features</h2>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="feature-item animated fadeInUp delay-3">
+                        <i class="fa fa-css3"></i>
+                        <h4>HTML5 &amp; CSS3</h4>
+
+                        <p>
+                            Verified HTML5 and CSS3 syntax by W3C services.
+                        </p>
+                    </div>
+                </div>
+                <!-- /.item -->
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="feature-item animated fadeInUp delay-3">
+                        <i class="fa fa-mobile"></i>
+                        <h4>Responsive Design</h4>
+
+                        <p>
+                            Mobile first design. Fits many resolutions, from large desktops to small mobile devices.
+                        </p>
+                    </div>
+                </div>
+                <!-- /.item -->
+                <div class="clearfix visible-sm"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="feature-item animated fadeInUp delay-3">
+                        <i class="fa fa-rocket"></i>
+                        <h4>1000+ Icons</h4>
+
+                        <p>
+                            Featuring Font Awesome, Ion Icons, and Glyphicons.
+                        </p>
+                    </div>
+                </div>
+                <!-- /.item -->
+                <div class="clearfix visible-md visible-lg"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="feature-item animated fadeInUp delay-3">
+                        <i class="fa fa-paint-brush"></i>
+                        <h4>6 Skins</h4>
+
+                        <p>
+                            Choose a skin that matches your branding or edit the LESS variables to create your own.
+                        </p>
+                    </div>
+                </div>
+                <!-- /.item -->
+                <div class="clearfix visible-sm"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="feature-item animated fadeInUp delay-3">
+                        <i class="fa fa-print"></i>
+                        <h4>Enhanced For Printing</h4>
+
+                        <p>
+                            Support for printing any page. The invoice page makes a perfect example.
+                        </p>
+                    </div>
+                </div>
+                <!-- /.item -->
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="feature-item animated fadeInUp delay-3">
+                        <i class="fa fa-bolt"></i>
+                        <h4>Lightweight</h4>
+
+                        <p>
+                            Although AdminLTE is full of features, it was designed to be fast and lightweight.
+                        </p>
+                    </div>
+                </div>
+                <!-- /.item -->
+                <div class="clearfix visible-sm visible-md visible-lg"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="feature-item animated fadeInUp delay-3">
+                        <i class="fa fa-globe"></i>
+                        <h4>Browser Compatibility</h4>
+
+                        <p>
+                            Support for most major browsers including Safari, IE9+, Chrome, FF, and Opera.
+                        </p>
+                    </div>
+                </div>
+                <!-- /.item -->
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="feature-item animated fadeInUp delay-3">
+                        <i class="fa fa-th"></i>
+                        <h4>Many Plugins</h4>
+
+                        <p>
+                            Over 18 plugins and an aditional 3 custom made plugins just for AdminLTE.
+                        </p>
+                    </div>
+                </div>
+                <!-- /.item -->
+                <div class="clearfix visible-sm"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="feature-item animated fadeInUp delay-3">
+                        <i class="fa fa-users"></i>
+                        <h4>Active Community</h4>
+
+                        <p>
+                            Have a suggestion or an issue? Visit our <a href="https://github.com/almasaeed2010/AdminLTE/issues">Github</a> repository to get help.
+                        </p>
+                    </div>
+                </div>
+                <!-- /.item -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.features-menu-->
+
+    <div class="section bg-gray">
+
+        <div class="articles-list" id="articles-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="text-center" style="margin-bottom: 40px">Recent Articles</h2>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-sm-4">
+                        <article class="articles-list-item">
+                            <div class="article-img">
+                                <a href="/blog/free-admin-panels">
+                                    <img class="img-responsive" src="/uploads/images/free-admin-panel-templates.jpg" alt="20 Free Bootstrap Admin Panel Templates 2019">
+                                </a>
+                            </div>
+                            <div class="article-text">
+                                <h2 style="font-size: 22px"><a href="/blog/free-admin-panels">20 Free Bootstrap Admin Panel Templates 2019</a></h2>
+
+                                <p class="article-excerpt">Stunning looking admin panel templates to make your dashboard to stand out</p>
+                                <div class="article-date" style="margin: 0">May 31, 2019</div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="articles-list-item">
+                            <div class="article-img">
+                                <a href="/blog/bootstrap-admin-panels">
+                                    <img class="img-responsive" src="/uploads/images/bootstrap-admin-panels.jpg" alt="20 Bootstrap Admin Panel Templates 2019">
+                                </a>
+                            </div>
+                            <div class="article-text">
+                                <h2 style="font-size: 22px"><a href="/blog/bootstrap-admin-panels">20 Bootstrap Admin Panel Templates 2019</a></h2>
+
+                                <p class="article-excerpt">Here are the most popular Boostrap admin panel templates you can find today</p>
+                                <div class="article-date" style="margin: 0">May 20, 2019</div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="articles-list-item">
+                            <div class="article-img">
+                                <a href="/blog/react-bootstrap-templates">
+                                    <img class="img-responsive" src="/uploads/images/react-ui-frameworks.png" alt="20 React Bootstrap Templates 2019">
+                                </a>
+                            </div>
+                            <div class="article-text">
+                                <h2 style="font-size: 22px"><a href="/blog/react-bootstrap-templates">20 React Bootstrap Templates 2019</a></h2>
+
+                                <p class="article-excerpt">Bootstrap is raking over the world and so is React. Therefore, we decided to showcase these outstanding React Bootstrap templates</p>
+                                <div class="article-date" style="margin: 0">May 31, 2019</div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 40px">Issues &amp; Support</h2>
+
+            <p class="lead text-center">
+                For AdminLTE support, please visit our
+                <a href="https://github.com/ColorlibHQ/AdminLTE/issues">Github repository</a> and post your issue, suggestion, or contribution.
+            </p>
+
+            <p>
+                We try our best to provide support to the users of AdminLTE. Thanks to many of our users, AdminLTE has a great community support. We will try to respond to your post as soon as possible. For a faster response, please include as much information about
+                your issue as possible.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="testimonials bg-gray">
+        <div class="container">
+
+            <h2 class="text-center">What Others Are Saying</h2>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img"></div>
+                        <p class="testimonial-content">
+                            @colorlib have done a great design AdminLTE. Loved it. Very much look forward to Bootstrap 4 version.
+                            <br><br> ─ @iraycd
+                        </p>
+                    </div>
+                </div>
+                <!-- /.col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img"></div>
+                        <p class="testimonial-content">
+                            @colorlib has some serious ui design skills! just checked out their work.
+                            <br><br> ─ @Shalotelli
+                        </p>
+                    </div>
+                </div>
+                <!-- /.col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img"></div>
+                        <p class="testimonial-content">
+                            @colorlib Great work on AdminLTE theme. The best free Bootstrap admin dashboard ever!
+                            <br><br> ─ @walphert
+                        </p>
+                    </div>
+                </div>
+                <!-- /.col-md-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.testimonials -->
+
+
+    <div class="testimonials" id="subscribe">
+        <div id="block-overlay" class="overlay-b">
+            <i class="fa fa-refresh fa-spin"></i>
+        </div>
+        <div class="container">
+            <h2 class="text-center">Subscribe</h2>
+            <p class="lead text-center">Subscribe now to get notified about new versions of AdminLTE and other cool projects that we are working on.
+            </p>
+
+            <div class="alert response" style="display: none;">
+                <h4 class="response-title"></h4>
+
+                <div class="response-body"></div>
+            </div>
+            <!--form action="{--{ url('subscribe') }}" method="post" id="subscribe-form"-->
+            <form method="POST" action="https://adminlte.io/subscribe" accept-charset="UTF-8" id="subscribe-form"><input name="_token" type="hidden" value="vJyttnrJlYp35fiK520l0ln1JKfRVJbRQTEzxj31">
+                <small class="text-info">* indicates required fields</small>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group with-icon">
+                                    <i class="fa fa-android"></i>
+                                    <input type="text" name="first_name" placeholder="First name *" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group with-icon">
+                                    <i class="fa fa-android"></i>
+                                    <input type="text" name="last_name" placeholder="Last name" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group with-icon">
+                            <i class="fa fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Email *" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group cs2">
+                            <button type="submit" name="btn" class="btn btn-primary btn-block" id="subscribe-btn">
+                          Subscribe
+                      </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="author bg-gray">
+        <div class="container">
+            <h2 class="text-center">About The Author</h2>
+
+            <div class="image">
+                <img class="img-responsive img-circle" src="https://adminlte.io/img/colorlib-logo.png" alt="Author Picture">
+            </div>
+            <div class="item">
+                <h3>Colorlib</h3>
+
+                <p class="lead">
+                    Colorlib is the largest provider of free Bootstrap templates with more than 700 availabe and many more relased every day. They started with WordPress and slowly moved to other types of templates and themes such as admin templates, Shopify themes, Bootstrap
+                    templates, React, Angular and even Vue templates. Colorlib was launched in 2013 by Aigars Silkalns and since then have developed many open source project that have been used by millions of developers and users worldwide.
+                </p>
+                <p>
+                    <a href="https://colorlib.com/wp/cat/bootstrap/">Learn more</a>
+                </p>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!--/.author-->
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 item">
+                Copyright © 2014-2019 <b><a href="/" style="color: #fff">AdminLTE</a></b>. All rights reserved.
+                <b><a href="/privacy" style="color: #fff">Privacy Policy</a></b>
+            </div>
+            <div class="col-sm-3 text-center">
+                <a href="https://twitter.com/colorlib" class="btn btn-twitter btn-social" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter Account"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/colorlib" class="btn btn-facebook btn-social" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook Page"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com/ColorlibHQ" class="btn btn-github btn-social" data-toggle="tooltip" data-placement="top" title="" data-original-title="Github Repositories"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- styles -->
+<!-- Font-Awesome -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- Scripts -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="/js/app.js"></script>
+<div id="fb-root" class=" fb_reset">
+    <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+        <div></div>
+        <div><iframe name="fb_xdm_frame_https" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
+                src="https://staticxx.facebook.com/connect/xd_arbiter.php?version=44#channel=f27e725e0aeaac&amp;origin=https%3A%2F%2Fadminlte.io" style="border: none;"></iframe></div>
+    </div>
+</div>
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = '//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+    $(function() {
+        $('.navbar').addClass('navbar-welcome');
+        $('[data-toggle="tooltip"]').tooltip();
+        $('#subscribe-btn').click(function(e) {
+            e.preventDefault();
+            $(this).html('<i class=\'fa fa-refresh fa-spin\'></i>');
+            $('#block-overlay').show();
+            $.post($('#subscribe-form').attr('action'),
+                $('#subscribe-form').serialize(),
+                function(data) {
+                    $('#subscribe-btn').html('Subscribe');
+                    $('#block-overlay').hide();
+                    if (data.err) {
+                        $('.response').removeClass('alert-success').addClass('alert-danger');
+                        $('.response-title').html('<i class=\'fa fa-exclamation-triangle\'></i> Oops! Something went wrong.');
+                        var errors = '';
+                        $.each(data.msg, function(i, v) {
+                            $.each(v, function(index, val) {
+                                errors += '<p>' + val + '</p>';
+                            });
+                        });
+                        $('.response-body').html(errors);
+                    } else {
+                        $('.response').removeClass('alert-danger').addClass('alert-success');
+                        $('.response-title').html('<i class=\'fa fa-check\'></i> Awesome!');
+                        $('.response-body').html(data.msg);
+                        $('#subscribe-form :input').val('');
+                        $('#subscribe-form').slideUp();
+                    }
+                    if (!$('.response').is(':visible')) {
+                        $('.response').slideDown();
+                    } else {
+
+                        if ($('.response').hasClass('alert-success'))
+                            return;
+
+                        $('.response').addClass('animated flash');
+                        $('.response').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                            $(this).removeClass('animated flash');
+                        });
+                    }
+                },
+                'json').error(function(a, b, c) {
+                console.log('Error: ' + a.status + ' ' + ' ' + b + ' ' + c);
+                $('#subscribe-btn').html('Subscribe');
+                $('#block-overlay').hide();
+            });
+        });
+    });
+</script>
+<script>
+    ! function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');
+</script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.d9084ca5af1ffbe01c8d444cfadfa6fe.html?origin=https%3A%2F%2Fadminlte.io" title="Twitter settings iframe" style="display: none;"></iframe>

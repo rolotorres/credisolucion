@@ -8,6 +8,7 @@ import { APP_ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+import { PrincipalComponent } from './principal/principal.component';
 
 // Modules
 import { PagesModule } from './pages/pages.module';
@@ -19,6 +20,7 @@ import { PagesModule } from './pages/pages.module';
     AppComponent,
     LoginComponent,
     RegisterComponent,
+    PrincipalComponent,
   ], 
   imports: [
     BrowserModule,
